@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.container {
+    background-color: white;
+    height: 800px;
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+}
+
+.primary {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 12px;
+    margin-top: 28px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 140px;
+    margin-right: 60px;
+}
+
+.logo p {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.logo p span {
+    font-weight: bold;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.logo-profile {
+    height: 50px;
+    width: 50px;
+    background-image: linear-gradient(#d4d4d4, #f8f8f8);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.logo-profile img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.dot {
+    background-color: #73c520;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 12px;
+    border: 1px solid white;
+}
+
+.secondary {
+    position: relative;
+}
+
+/* .rectangle {
+    position: relative;
+} */
+
+.rec1 {
+    /* clip-path: polygon(41% 0, 100% 18%, 100% 50%, 0 55%); */
+    -webkit-clip-path: inset(10px round 30px 30px 30px 30px);
+    clip-path: inset(10px round 30px 30px 30px 30px);
+    background-color: #e1e1e1;
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    overflow: hidden;
+    left: 210px;
+    top: -38px;
+    transform: rotate(-0.16turn);
+}
+
+.rec2 {
+    /* clip-path: polygon(25% 0%, 100% 11%, 100% 100%, 0 51%); */
+    -webkit-clip-path: inset(10px round 30px 30px 30px 30px);
+    clip-path: inset(10px round 30px 30px 30px 30px);
+    background-color: #f2b9ac;
+    height: 400px;
+    width: 320px;
+    left: 100px;
+    top: 15px;
+    position: absolute;
+    overflow: hidden;
+    transform: rotate(0.04turn);
+    background-image: url("https://cdn3d.iconscout.com/3d/premium/thumb/man-7411049-6067898.png?f=webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(5px);
+}
+
+.rec3 {
+    -webkit-clip-path: inset(10px round 30px 30px 30px 30px);
+    clip-path: inset(10px round 30px 30px 30px 30px);
+    width: 370px;
+    height: 470px;
+    background-color: #fbc457;
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 16px;
+    background-image: url("https://png.pngtree.com/png-clipart/20221207/ourmid/pngtree-fashion-boy-avatar-png-image_6514592.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video {
+    height: 50px;
+    width: 50px;
+    background-color: #fee7b0;
+    border-radius: 50%;
+    margin: 40px 0 0 40px;
+}
+
+.video img {
+    width: 25px;
+    height: 25px;
+    margin: 12px;
+}
+
+.sound {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 15px 40px;
+}
+
+.sound img {
+    width: 25px;
+    height: 25px;
+    margin: 12px;
+    color: #fbc457;
+}
+
+.mic {
+    height: 50px;
+    width: 50px;
+    background-color: #fee7b0;
+    border-radius: 50%;
+    margin: 15px 40px;
+}
+
+.mic img {
+    width: 25px;
+    height: 25px;
+    margin: 12px;
+}
+
+.rec3 h1 {
+    padding-left: 40px;
+    margin-top: 50px;
+    font-size: 40px;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.rec3 p {
+    padding-left: 40px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+}
+
+.line {
+    position: absolute;
+    height: 5px;
+    width: 60px;
+    background-color: white;
+    border-radius: 20px;
+    top: 600px;
+    margin-left: 285px;
+}
+
+.inner-line {
+    height: 5px;
+    width: 30px;
+    background-color: black;
+    border-radius: 20px;
+    top: 550px;
+    margin-left: 30px;
+}
+
+.round {
+    position: relative;
+    height: 115px;
+    width: 115px;
+    background-color: white;
+    background-image: conic-gradient(black 0deg, black 90deg, black 90deg, black 180deg, black 100deg, black 238deg, #dedcdc 240deg);
+    border: 8px solid white;
+    border-radius: 50%;
+    margin: 440px 0 0 150px;
+}
+
+.round img {
+    width: 90px;
+    height: 90px;
+    margin: 4.5px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.emojis {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 30px ;
+}
+
+.cross {
+    height: 80px;
+    width: 80px;
+    background-color: #fc7b72;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+.cross img {
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    margin: 14px;
+}
+
+.heart {
+    height: 80px;
+    width: 80px;
+    background-color: #6355e2;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+.heart img {
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    padding: 5px;
+}
+
+.tertiary {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.profile:hover {
+    cursor: pointer;
+    color: black;
+}
